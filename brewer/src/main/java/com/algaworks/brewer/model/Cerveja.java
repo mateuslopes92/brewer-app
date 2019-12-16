@@ -6,15 +6,15 @@ import org.hibernate.validator.constraints.NotBlank;
 
 public class Cerveja {
 	
-	@NotBlank
+	@NotBlank(message = "SKU é obrigatório")
 	private String sku;
 	
-	@NotBlank
+	@NotBlank(message = "Nome é obrigatório")
 	private String name;
 	
 	@NotBlank
-	@Size(max = 30)
-	private String descritpion;
+	@Size(min = 1, max = 50, message = "A tamanho da descrição deve estar entre 1 e 50")
+	private String description;
 	
 	public String getSku() {
 		return sku;
@@ -28,11 +28,11 @@ public class Cerveja {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getDescritpion() {
-		return descritpion;
+	public String getDescription() {
+		return description;
 	}
-	public void setDescritpion(String descritpion) {
-		this.descritpion = descritpion;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	
 }

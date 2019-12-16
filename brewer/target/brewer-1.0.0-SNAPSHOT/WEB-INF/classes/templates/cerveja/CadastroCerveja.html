@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
 	<body>
 		<h1>TESTE</h1>
+	</body>
+		<div th:each="erro : ${#fields.datailedErrors('${cerveja.*}')}">
+			<span th:text="${erro.message}"></span>
+		</div>
 		
-		<form method="post">
+		<form method="POST" th:object="${cerveja}">
+		
+		<span th:text="${mensagem}" >ERRO!</span>
+		<br/>
+		
 			<label>SKU</label>
 			<input type="text" name="sku">
 			<br/>
 			
+			<label>Nome</label>
+			<input type="text" name="name">
+			<br/>
+			
+			<label>Descrição</label>
+			<input type="text" name="description" >
+			<br/>
+			
 			<input type="submit" name="Salvar">
 		</form>
-	</body>
 </html>

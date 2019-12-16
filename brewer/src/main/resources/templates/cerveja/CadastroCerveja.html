@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:th="http://www.thymeleaf.org">
-	<body>
-		<h1>TESTE</h1>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<h1>Olá! Thymeleaf configurado!</h1>
+</body>
+	
+	<div th:each="erro : ${#fields.detailedErrors('${cerveja.*}')}">
+		<span th:text="${erro.message}"></span>
+	</div>
+	
+	<form method="POST" th:object="${cerveja}">
+		<span th:text="${mensagem}">Erro!</span>
+		<br>
 		
-		<form method="post">
-		<span th:text="${mensagem}" ></span>
-		<br/>
+		<label for="sku">SKU</label>
+		<input type="text" id="sku" th:field="*{sku}">
+		<br>
 		
-			<label>SKU</label>
-			<input type="text" name="sku">
-			<br/>
-			
-			<label>Nome</label>
-			<input type="text" name="name">
-			<br/>
-			
-			<label>Descrição</label>
-			<input type="text" name="description" >
-			<br/>
-			
-			<input type="submit" name="Salvar">
-		</form>
-	</body>
+		<label for="nome">Nome</label>
+		<input type="text" id="name" th:field="*{name}">
+		<br>
+		
+		<label for="descricao">Descrição</label>
+		<textarea rows="3" cols="30" id="description" th:field="*{description}"></textarea>
+		<br>
+		
+		<input type="submit" value="Salvar">
+	</form>
+
 </html>

@@ -19,6 +19,8 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 
 import com.algaworks.brewer.controller.CervejasController;
 
+import nz.net.ultraq.thymeleaf.LayoutDialect;
+
 /**
  * 
  * @author mateus
@@ -26,7 +28,7 @@ import com.algaworks.brewer.controller.CervejasController;
  * com base em um controller ja criado.
  */
 @Configuration
-@ComponentScan(basePackageClasses = CervejasController.class)
+@ComponentScan(basePackageClasses = {CervejasController.class})
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 	
@@ -43,13 +45,15 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 		resolver.setTemplateEngine(templateEngine());
 		resolver.setCharacterEncoding("UTF-8");
 		return resolver;
-	}
+	} 
 
 	@Bean
 	public TemplateEngine templateEngine() {
 		SpringTemplateEngine engine = new SpringTemplateEngine();
 		engine.setEnableSpringELCompiler(true);
 		engine.setTemplateResolver(templateResolver());
+		
+		engine.addDialect(new LayoutDialect());
 		return engine;
 	}
 	
@@ -69,8 +73,8 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 	 * Mapeamento de layouts e arquivos estaticos 
 	 */
 	@Override
-		public void addResourceHandlers(ResourceHandlerRegistry registry) {
-			registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
-		}
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
+	}
 	
 }

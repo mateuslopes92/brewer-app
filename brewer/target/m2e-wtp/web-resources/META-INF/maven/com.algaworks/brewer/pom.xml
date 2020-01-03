@@ -102,7 +102,7 @@
         <!-- Thymeleaf - Layout Dialect -->
 		<dependency>
     		<groupId>nz.net.ultraq.thymeleaf</groupId>
-    		<artifactId>thymeleaf-layout-dialect</artifactId>
+    		<artifactId>thymeleaf-layout-dialect</artifactId> 
     		<version>${thymeleaf-layout-dialect.version}</version>
 		</dependency>
 		

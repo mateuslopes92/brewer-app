@@ -1,0 +1,20 @@
+/*
+	Componentes
+*/
+
+/*Field Action*/
+.bw-field-action {
+	display: flex;
+}
+
+.bw-field-action_icon {
+	margin: 6px 0 0 5px; 
+}
+
+/*
+	utilidades
+*/
+
+.bw-glyphicon-large {
+	font-size: 18px;
+}  

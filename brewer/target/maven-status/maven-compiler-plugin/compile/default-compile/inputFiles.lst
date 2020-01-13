@@ -1,4 +1,12 @@
+/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/controller/EstiloController.java
+/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/controller/CervejaController.java
+/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/controller/UsuarioController.java
 /home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/config/init/AppInitializer.java
-/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/controller/CervejasController.java
+/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/model/Cidade.java
+/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/controller/CidadeController.java
+/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/model/Cliente.java
 /home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/config/WebConfig.java
+/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/model/Usuario.java
 /home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/model/Cerveja.java
+/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/model/Estilo.java
+/home/mateus/Documents/AlgaWorks/brewer-app/brewer/src/main/java/com/algaworks/brewer/controller/ClienteContoller.java

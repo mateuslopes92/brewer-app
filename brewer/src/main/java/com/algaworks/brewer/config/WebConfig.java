@@ -17,7 +17,7 @@ import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ITemplateResolver;
 
-import com.algaworks.brewer.controller.CervejasController;
+import com.algaworks.brewer.controller.CervejaController;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 
@@ -28,7 +28,7 @@ import nz.net.ultraq.thymeleaf.LayoutDialect;
  * com base em um controller ja criado.
  */
 @Configuration
-@ComponentScan(basePackageClasses = {CervejasController.class})
+@ComponentScan(basePackageClasses = {CervejaController.class})
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 	

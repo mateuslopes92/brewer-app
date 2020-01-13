@@ -1,0 +1,8 @@
+com/algaworks/brewer/model/Cidade.class
+com/algaworks/brewer/controller/CervejaController.class
+com/algaworks/brewer/config/WebConfig.class
+com/algaworks/brewer/model/Cerveja.class
+com/algaworks/brewer/model/Cliente.class
+com/algaworks/brewer/controller/ClienteContoller.class
+com/algaworks/brewer/config/init/AppInitializer.class
+com/algaworks/brewer/controller/CidadeController.class
